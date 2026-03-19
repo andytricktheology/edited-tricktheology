@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Trick Theology",
+  "description": "A futuristic, high-performance digital hub for Biblical secrets, prophecy, and theological revelation.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

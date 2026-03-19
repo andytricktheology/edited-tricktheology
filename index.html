@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trick Theology | Unlocking Biblical Secrets</title>
+    <link id="dynamic-favicon" rel="icon" type="image/png" href="https://res.cloudinary.com/docainyye/image/upload/v1768978498/Trick_Theology_Logo_2025_tc6nvd.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                start: '#c900ff',
+                end: '#330040',
+              }
+            },
+            fontFamily: {
+              orbitron: ['Orbitron', 'sans-serif'],
+              exo: ['"Exo 2"', 'sans-serif'],
+            },
+            animation: {
+              'wipe-in': 'wipe 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards',
+              'slide-left': 'slideLeft 20s linear infinite',
+            },
+            keyframes: {
+              wipe: {
+                '0%': { 
+                  'clip-path': 'inset(0 100% 0 0)',
+                  '-webkit-clip-path': 'inset(0 100% 0 0)' 
+                },
+                '100%': { 
+                  'clip-path': 'inset(0 0 0 0)',
+                  '-webkit-clip-path': 'inset(0 0 0 0)' 
+                },
+              },
+              slideLeft: {
+                '0%': { transform: 'translateX(100%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .wipe-text {
+        background: linear-gradient(to right, white 0%, #c900ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.5s ease;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #c900ff 0%, #330040 100%);
+      }
+      .card-glow:hover {
+        box-shadow: 0 0 30px rgba(201, 0, 255, 0.3);
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c900ff;
+        border-radius: 4px;
+      }
+      .typing-cursor::after {
+        content: "|";
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #c900ff;
+        border-radius: 10px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-white font-exo transition-colors duration-300">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
